@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, rgba(145, 145, 219, 0.774), rgb(170, 8, 8));
+    background-attachment: fixed;
+}
+.container{
+    width: 875px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    margin: 30px auto 10px auto;
+    border-radius: 15px;
+    color: g
+}
+.conteudo{
+    width: 500px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.conteudo h1{
+    font: normal 20pt Arial;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+.conteudo .retangulo{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 80px;
+    margin-bottom: 70px;
+}
+.conteudo p{
+    position: relative;
+    display: block;
+    left: 135px;
+    top: -85px;
+}
+.conteudo span{
+    position: absolute;
+    top: 22px;
+    right: 10px;
+    background-image: linear-gradient(to left, red, rgba(145, 145, 219, 0.774));
+    font-family: Comic sans ms;
+    font-weight: 20%;
+}
+.conteudo img{
+    width: 70px;
+}
+.item img{
+    height: 85px;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+}
+#lateral-fixo{
+    background-image: linear-gradient(to bottom right, #fff 30px, rgba(145, 145, 219, 0.774) 45px, rgb(170, 8, 8) 60px, #fff 10px);
+    width: 270px;
+    border-radius: 15px;
+    float: left;
+    height: auto;
+    backdrop-filter: blur(10px);
+}
+.header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font: bolder 14pt Arial;
+}
+.header img{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 48px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.header .subtitulo{
+    font: bolder 10pt Arial;
+}
+ul li{
+    list-style: none;
+}
+.limagem{
+    display: inline;
+}
+.progress{
+    height: 25px;
+    background-color: #c0c0c0;
+    position: relative;
+    display: block;
+    left: 135px;
+    top: -80px;
+    border-radius: 8px;
+    width: 200px;
+}
+.progress .progress-bar{
+    position: absolute;
+    height: 100%;
+    background-image: linear-gradient(to left, red, rgba(145, 145, 219, 0.774));
+    border-radius: 8px;
+    animation: progress-animation 6s infinite;
+}
+@keyframes progress-animation{
+    from{ width: 60%; }
+    to{ width: 60%;}
+}
+.item{
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 5px;
+    width: 450px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+    position: relative;
+    border-radius: 8px;
+    font: normal 13pt Arial;
+    font-weight: bolder;
+}
+.item:hover{
+    cursor: pointer;
+}
+.item .subtitulo{
+    font-size: 11pt;
+    margin-top: 5px;
+}
+.litem{
+    margin-bottom: 26px;
+}
+.score{
+    background-image: linear-gradient(to right, rgba(145, 145, 219, 0.774), red);
+    margin-top: 60px;
+    margin-bottom: 26px;
+    width: 200px;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 30px;     
+}
+.score img{
+    width: 70px;
+    position: absolute;
+    left: 150px;
+    top: 515px;
+    background-blend-mode: normal;
+}
+.score p{
+    color: #fff;
+    font-weight: bold;
+    font: normal 15pt Arial;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.midias{
+    position: absolute;
+    top: 50px;
+    right: 66px;
+}
+.midias img{
+    width: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+li{
+    display: grid;
+    grid-template-rows: 20px;
+    padding: 2px;
+    margin-bottom: 24px;
+}
+
+li img{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+li span{
+    margin-left: 120px;
+    font: normal 12pt Arial;
+    font-weight: bolder;
+    color: rgba(54, 18, 18, 0.671);
+}
+.bola-top{
+    width: 190px;
+    height: 190px;
+    border-radius: 1000px;
+    background-image: linear-gradient(to left, rgb(145, 145, 219), rgba(255, 0, 0, 0.4));
+    position: absolute;
+    right: -126px;
+    top: 2px;
+    z-index: 0;
+}
+.bola-bottom{
+    width: 190px;
+    height: 190px;
+    border-radius: 1000px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.4), rgba(51, 51, 214, 0.4));
+    position: absolute;
+    left: -130px;
+    bottom: -4px;
+    z-index: 0;
+}
